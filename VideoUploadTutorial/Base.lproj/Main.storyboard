@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoUploadTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akT-OJ-4Jg">
+                                <rect key="frame" x="5" y="44" width="404" height="500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUe-Hm-jmR">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="500"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FtS-U9-Na6">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FtS-U9-Na6" firstAttribute="leading" secondItem="akT-OJ-4Jg" secondAttribute="leading" id="3w1-nT-L2w"/>
+                                    <constraint firstAttribute="bottom" secondItem="FtS-U9-Na6" secondAttribute="bottom" id="Mb9-OI-VkD"/>
+                                    <constraint firstAttribute="bottom" secondItem="hUe-Hm-jmR" secondAttribute="bottom" id="Ozh-K3-Sci"/>
+                                    <constraint firstAttribute="trailing" secondItem="FtS-U9-Na6" secondAttribute="trailing" id="QEQ-pU-Osu"/>
+                                    <constraint firstItem="hUe-Hm-jmR" firstAttribute="top" secondItem="akT-OJ-4Jg" secondAttribute="top" id="fn9-XN-AM3"/>
+                                    <constraint firstItem="hUe-Hm-jmR" firstAttribute="leading" secondItem="akT-OJ-4Jg" secondAttribute="leading" id="lpP-ed-Pry"/>
+                                    <constraint firstAttribute="trailing" secondItem="hUe-Hm-jmR" secondAttribute="trailing" id="s5T-rT-LhL"/>
+                                    <constraint firstItem="FtS-U9-Na6" firstAttribute="top" secondItem="akT-OJ-4Jg" secondAttribute="top" id="vVt-Yu-7ou"/>
+                                    <constraint firstAttribute="height" constant="500" id="ypF-XN-xpN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnV-pD-ESF">
+                                <rect key="frame" x="157" y="569" width="100" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Uj3-ky-bnB"/>
+                                    <constraint firstAttribute="width" constant="100" id="wp3-LU-DwG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SnR-ck-kQe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JnV-pD-ESF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Bo-Ia-SLG"/>
+                            <constraint firstItem="akT-OJ-4Jg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="C8w-Mx-mBl"/>
+                            <constraint firstItem="akT-OJ-4Jg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="E9T-De-bFe"/>
+                            <constraint firstItem="JnV-pD-ESF" firstAttribute="top" secondItem="akT-OJ-4Jg" secondAttribute="bottom" constant="25" id="wqL-9k-h0u"/>
+                            <constraint firstItem="akT-OJ-4Jg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-5" id="yWN-v1-T8B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="akT-OJ-4Jg" id="iGI-gN-a4G"/>
+                        <outlet property="imageView" destination="FtS-U9-Na6" id="VST-I9-eo3"/>
+                        <outlet property="uploadButton" destination="JnV-pD-ESF" id="hax-zH-vgj"/>
+                        <outlet property="videoView" destination="hUe-Hm-jmR" id="jJL-Sd-bU1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104.34782608695653" y="-8.0357142857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
